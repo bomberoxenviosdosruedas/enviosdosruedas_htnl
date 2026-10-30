@@ -1,0 +1,93 @@
+/**
+ * Envíos DosRuedas — Design Tokens Canónicos
+ * Generado mediante la skill extract-design-system
+ */
+
+:root {
+  /* ========================================================================
+   * SUPERFICIES Y LIENZO BASE
+   * ======================================================================== */
+  --surface-page: #ffffff;
+  --text-body: #0950f6;
+
+  /* ========================================================================
+   * PALETA CANÓNICA — Ley de Tres Colores (Máx oscuridad: #0950F6)
+   * ======================================================================== */
+  --color-brand-blue-50: #e6eefe;
+  --color-brand-blue-100: #bacefd;
+  --color-brand-blue-200: #8eaffb;
+  --color-brand-blue-300: #628ff9;
+  --color-brand-blue-400: #3570f8;
+  --color-brand-blue-500: #0950f6;
+
+  --color-brand-yellow-50: #fffde6;
+  --color-brand-yellow-100: #fffab8;
+  --color-brand-yellow-200: #fff78a;
+  --color-brand-yellow-300: #fff45c;
+  --color-brand-yellow-400: #fff12e;
+  --color-brand-yellow-500: #ffec01;
+  --color-brand-yellow-600: #e6d400;
+
+  --color-white: #ffffff;
+
+  /* Alias semánticos */
+  --color-brand-primary: var(--color-brand-blue-500);
+  --color-brand-accent: var(--color-brand-yellow-500);
+  --color-brand-ink: var(--color-brand-blue-500);
+
+  /* ========================================================================
+   * TIPOGRAFÍAS
+   * ======================================================================== */
+  --font-sans: 'Outfit', 'IBM Plex Sans', sans-serif;
+  --font-display: 'Anton', sans-serif;
+  --font-subheading: 'Bebas Neue', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+
+  /* Escala tipográfica */
+  --text-2xs: 0.625rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+  --text-6xl: 3.75rem;
+  --text-7xl: 4.5rem;
+
+  /* ========================================================================
+   * ESPACIADOS & RADIOS
+   * ======================================================================== */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-3xl: 32px;
+  --radius-full: 9999px;
+
+  /* ========================================================================
+   * SOMBRAS TEÑIDAS (AZUL & AMARILLO)
+   * ======================================================================== */
+  --shadow-xs: 0 1px 2px rgba(9, 80, 246, 0.04);
+  --shadow-sm: 0 2px 4px rgba(9, 80, 246, 0.06);
+  --shadow-md: 0 4px 8px rgba(9, 80, 246, 0.08);
+  --shadow-lg: 0 8px 16px rgba(9, 80, 246, 0.1);
+  --shadow-elevated: 0 16px 40px rgba(9, 80, 246, 0.18);
+  --shadow-float: 0 25px 50px -12px rgba(9, 80, 246, 0.15);
+  --shadow-hover-lift: 0 24px 64px rgba(9, 80, 246, 0.2);
+  --shadow-antigravity-deep: 0 24px 64px rgba(9, 80, 246, 0.22);
+  --shadow-cta-glow: 0 0 28px rgba(255, 236, 1, 0.45), 0 8px 24px rgba(9, 80, 246, 0.18);
+  --shadow-accent-sm: 0 2px 4px rgba(255, 236, 1, 0.15);
+
+  /* ========================================================================
+   * MOTION TOKENS
+   * ======================================================================== */
+  --ease-out-ui: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-snappy: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-feedback: 160ms;
+  --duration-dropdown: 200ms;
+  --duration-modal: 250ms;
+}

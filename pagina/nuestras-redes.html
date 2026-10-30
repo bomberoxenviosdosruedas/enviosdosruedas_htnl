@@ -5,6 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nuestras Redes | Envíos DosRuedas - Mar del Plata</title>
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+  <link rel="manifest" href="../public/manifest.json" />
+  <meta property="og:image" content="../public/og-image.jpg" />
   <!-- Google Fonts: Anton (Display), Bebas Neue (Subheading), Outfit (Sans), Geist Mono (Mono) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -225,8 +233,8 @@
           class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow-500 rounded-xl">
           <div class="flex items-center gap-2.5">
             <div
-              class="w-10 h-10 rounded-xl bg-brand-yellow-500 text-brand-blue-500 flex items-center justify-center font-display text-xl shadow-md transform group-hover:rotate-6 transition-transform">
-              <i data-lucide="bike" class="w-6 h-6 stroke-[2.5]"></i>
+              class="w-10 h-10 rounded-xl bg-brand-yellow-500 text-brand-blue-500 flex items-center justify-center font-display text-xl shadow-md transform group-hover:rotate-6 transition-transform overflow-hidden p-1">
+              <img src="../public/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas" class="w-full h-full object-contain" width="40" height="40" />
             </div>
             <span
               class="font-display text-2xl sm:text-3xl tracking-tight leading-none uppercase select-none flex flex-col sm:flex-row sm:gap-1 items-start sm:items-center">
@@ -680,6 +688,7 @@
                 <!-- Imagen Representativa de Celular y Redes -->
                 <div
                   class="relative aspect-square w-full overflow-hidden rounded-xl border border-white/20 bg-brand-blue-400/30 flex items-center justify-center group">
+                  <img src="../public/heroes/redes-celular.webp" alt="Redes Sociales Envíos DosRuedas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                   <!-- Ilustración de Smartphone con las 3 Redes -->
                   <div
                     class="relative w-4/5 h-[88%] rounded-3xl bg-brand-blue-900 border-4 border-white/30 shadow-2xl p-4 flex flex-col justify-between overflow-hidden">
@@ -959,24 +968,7 @@
             <!-- Imagen Post Destacado con Badge -->
             <div
               class="relative w-full md:w-1/2 h-64 md:h-full min-h-75 overflow-hidden bg-brand-blue-50 md:border-r border-brand-blue-100/50 group">
-              <!-- Visual Mockup con gradiente e icono de ruta -->
-              <div
-                class="absolute inset-0 bg-linear-to-br from-brand-blue-500 to-brand-blue-400 flex items-center justify-center p-6 text-white text-center">
-                <div class="space-y-3">
-                  <div
-                    class="w-16 h-16 rounded-2xl bg-brand-yellow-500 text-brand-blue-500 flex items-center justify-center mx-auto shadow-glow-yellow">
-                    <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                      <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-                  </div>
-                  <p class="font-display text-2xl uppercase tracking-wide text-white">Solución de Envíos</p>
-                  <span
-                    class="inline-block text-xs font-mono bg-white/20 px-3 py-1 rounded-full text-brand-yellow-300">Mar
-                    del Plata 2026</span>
-                </div>
-              </div>
+              <img src="../public/redes/fac1.webp" alt="Solución de Envíos en Mar del Plata" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
 
               <div class="absolute top-4 left-4 z-10">
                 <span
@@ -1068,13 +1060,7 @@
             class="rounded-[20px] bg-white text-brand-blue-500 overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50 shadow-sm">
 
             <div class="relative w-full h-56 overflow-hidden bg-brand-blue-50 border-b border-brand-blue-100/50">
-              <div
-                class="absolute inset-0 bg-linear-to-tr from-[#833AB4] via-[#FD1D1D] to-[#F77737] flex items-center justify-center p-6 text-white text-center">
-                <div>
-                  <p class="font-display text-xl uppercase tracking-wider">Servicio Confiable</p>
-                  <p class="text-xs font-mono mt-1 opacity-90">Mar del Plata Urbana</p>
-                </div>
-              </div>
+              <img src="../public/redes/ig1.webp" alt="Servicios en Ruta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
 
             <div class="flex flex-col justify-between flex-1">
@@ -1152,12 +1138,7 @@
             class="rounded-[20px] bg-white text-brand-blue-500 overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50 shadow-sm">
 
             <div class="relative w-full h-56 overflow-hidden bg-brand-blue-50 border-b border-brand-blue-100/50">
-              <div class="absolute inset-0 bg-[#0866FF] flex items-center justify-center p-6 text-white text-center">
-                <div>
-                  <p class="font-display text-xl uppercase tracking-wider">Confianza y Cara Visible</p>
-                  <p class="text-xs font-mono mt-1 text-white/80">Flota Local Propia</p>
-                </div>
-              </div>
+              <img src="../public/redes/fac2.webp" alt="Confianza y Cara Visible" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
 
             <div class="flex flex-col justify-between flex-1">
@@ -1235,13 +1216,7 @@
             class="rounded-[20px] bg-white text-brand-blue-500 overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50 shadow-sm">
 
             <div class="relative w-full h-56 overflow-hidden bg-brand-blue-50 border-b border-brand-blue-100/50">
-              <div
-                class="absolute inset-0 bg-linear-to-br from-[#833AB4] to-[#FD1D1D] flex items-center justify-center p-6 text-white text-center">
-                <div>
-                  <p class="font-display text-xl uppercase tracking-wider">Pilares Fundamentales</p>
-                  <p class="text-xs font-mono mt-1 text-brand-yellow-300">Responsabilidad y Eficiencia</p>
-                </div>
-              </div>
+              <img src="../public/redes/ig3.webp" alt="Pilares Fundamentales" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
 
             <div class="flex flex-col justify-between flex-1">
@@ -1319,13 +1294,7 @@
             class="rounded-[20px] bg-white text-brand-blue-500 overflow-hidden flex flex-col justify-between h-full border border-brand-blue-50 shadow-sm">
 
             <div class="relative w-full h-56 overflow-hidden bg-brand-blue-50 border-b border-brand-blue-100/50">
-              <div
-                class="absolute inset-0 bg-linear-to-tr from-[#FD1D1D] to-[#F77737] flex items-center justify-center p-6 text-white text-center">
-                <div>
-                  <p class="font-display text-xl uppercase tracking-wider">Tu Confianza es Nuestro Motor</p>
-                  <p class="text-xs font-mono mt-1 text-white/90">Operativa Diaria en Calle</p>
-                </div>
-              </div>
+              <img src="../public/redes/ig4.webp" alt="Tu Confianza es Nuestra Bandera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             </div>
 
             <div class="flex flex-col justify-between flex-1">
@@ -1677,8 +1646,8 @@
           <a href="/"
             class="flex items-center gap-3.5 group w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow-500 rounded-xl">
             <div
-              class="w-11 h-11 bg-white/10 p-1.5 rounded-xl border border-white/15 group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center text-brand-yellow-500">
-              <i data-lucide="bike" class="w-7 h-7"></i>
+              class="w-11 h-11 bg-white/10 p-1 rounded-xl border border-white/15 group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center overflow-hidden">
+              <img src="../public/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas" class="w-full h-full object-contain" width="44" height="44" />
             </div>
             <div class="flex flex-col leading-none">
               <span class="font-display text-2xl sm:text-3xl tracking-tight uppercase select-none text-white">

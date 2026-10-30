@@ -7,6 +7,14 @@
   <title>Mensajería en moto en Mar del Plata | Envíos DosRuedas</title>
   <meta name="description"
     content="Mensajería en moto y logística e-commerce en Mar del Plata. Envíos Express en franja de 3 hs, Mercado Envíos Flex en el día y reparto LowCost. Cotizá online.">
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="../public/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../public/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../public/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../public/apple-touch-icon.png" />
+  <link rel="manifest" href="../public/manifest.json" />
+  <meta property="og:image" content="../public/og-image.jpg" />
 
   <!-- Tipografías oficiales cargadas vía Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +22,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Geist+Mono:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap"
     rel="stylesheet">
+
+  <!-- Tokens Canónicos de Sistema de Diseño -->
+  <link rel="stylesheet" href="../design-system/tokens.css">
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -145,8 +156,8 @@
           class="flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow-500 rounded-xl">
           <div class="flex items-center gap-2.5">
             <div
-              class="w-10 h-10 rounded-xl bg-brand-yellow-500 text-brand-blue-500 flex items-center justify-center font-display text-xl shadow-md transform group-hover:rotate-6 transition-transform">
-              <i data-lucide="bike" class="w-6 h-6 stroke-[2.5]"></i>
+              class="w-10 h-10 rounded-xl bg-brand-yellow-500 text-brand-blue-500 flex items-center justify-center font-display text-xl shadow-md transform group-hover:rotate-6 transition-transform overflow-hidden p-1">
+              <img src="../public/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas" class="w-full h-full object-contain" width="40" height="40" />
             </div>
             <span
               class="font-display text-2xl sm:text-3xl tracking-tight leading-none uppercase select-none flex flex-col sm:flex-row sm:gap-1 items-start sm:items-center">
@@ -160,14 +171,14 @@
         <nav id="desktop-nav-opt" aria-label="Navegación principal" class="hidden lg:flex items-center gap-1.5">
           <!-- Inicio -->
           <a href="/" aria-current="page"
-            class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-brand-yellow-500 bg-black/20 border border-brand-yellow-500/30 transition-colors">
+            class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-brand-yellow-500 bg-white/15 border border-brand-yellow-500/30 transition-colors">
             Inicio
           </a>
 
           <!-- Servicios (Dropdown) -->
           <div class="relative group" id="dropdown-servicios">
             <button type="button" aria-haspopup="true" aria-expanded="false"
-              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-black/15 transition-colors flex items-center gap-1.5 cursor-pointer">
+              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-white/10 transition-colors flex items-center gap-1.5 cursor-pointer">
               <span>Servicios</span>
               <i data-lucide="chevron-down"
                 class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"></i>
@@ -178,7 +189,7 @@
                 class="bg-brand-blue-500 rounded-2xl shadow-2xl border border-white/15 py-2.5 text-white overflow-hidden">
                 <div class="flex flex-col gap-1 px-2">
                   <a href="/servicios/envios-express"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="zap" class="w-4 h-4"></i>
@@ -187,7 +198,7 @@
                       Express</span>
                   </a>
                   <a href="/servicios/envios-lowcost"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="trending-down" class="w-4 h-4"></i>
@@ -196,7 +207,7 @@
                       LowCost</span>
                   </a>
                   <a href="/servicios/enviosflex"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="clock" class="w-4 h-4"></i>
@@ -205,7 +216,7 @@
                       (MeLi)</span>
                   </a>
                   <a href="/servicios/empresas-cuenta-corriente"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="building-2" class="w-4 h-4"></i>
@@ -214,7 +225,7 @@
                       Corriente</span>
                   </a>
                   <a href="/servicios#ecommerce-24hs"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="package" class="w-4 h-4"></i>
@@ -223,7 +234,7 @@
                       24HS</span>
                   </a>
                   <a href="/servicios/deposito-fulfillment"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="store" class="w-4 h-4"></i>
@@ -239,7 +250,7 @@
           <!-- Plataformas (Dropdown) -->
           <div class="relative group" id="dropdown-plataformas">
             <button type="button" aria-haspopup="true" aria-expanded="false"
-              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-black/15 transition-colors flex items-center gap-1.5 cursor-pointer">
+              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-white/10 transition-colors flex items-center gap-1.5 cursor-pointer">
               <span>Plataformas</span>
               <i data-lucide="chevron-down"
                 class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"></i>
@@ -250,7 +261,7 @@
                 class="bg-brand-blue-500 rounded-2xl shadow-2xl border border-white/15 py-2.5 text-white overflow-hidden">
                 <div class="flex flex-col gap-1 px-2">
                   <a href="/logistica-dosruedas"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="search" class="w-4 h-4"></i>
@@ -259,7 +270,7 @@
                       DosRuedas</span>
                   </a>
                   <a href="/mardelivery"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="utensils-crossed" class="w-4 h-4"></i>
@@ -275,7 +286,7 @@
           <!-- Nosotros (Dropdown) -->
           <div class="relative group" id="dropdown-nosotros">
             <button type="button" aria-haspopup="true" aria-expanded="false"
-              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-black/15 transition-colors flex items-center gap-1.5 cursor-pointer">
+              class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-white/10 transition-colors flex items-center gap-1.5 cursor-pointer">
               <span>Nosotros</span>
               <i data-lucide="chevron-down"
                 class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180"></i>
@@ -286,7 +297,7 @@
                 class="bg-brand-blue-500 rounded-2xl shadow-2xl border border-white/15 py-2.5 text-white overflow-hidden">
                 <div class="flex flex-col gap-1 px-2">
                   <a href="/nosotros/sobre-nosotros"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="info" class="w-4 h-4"></i>
@@ -295,7 +306,7 @@
                       Nosotros</span>
                   </a>
                   <a href="/nosotros/preguntas-frecuentes"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="help-circle" class="w-4 h-4"></i>
@@ -304,7 +315,7 @@
                       Frecuentes</span>
                   </a>
                   <a href="/nosotros/nuestras-redes"
-                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-black/15 transition-colors group/item">
+                    class="flex items-center gap-3 px-3 py-2 rounded-xl text-white hover:text-brand-yellow-500 hover:bg-white/10 transition-colors group/item">
                     <div
                       class="p-1.5 rounded-lg bg-white/10 text-brand-blue-50 group-hover/item:bg-brand-yellow-500 group-hover/item:text-brand-blue-500 transition-colors">
                       <i data-lucide="share-2" class="w-4 h-4"></i>
@@ -319,7 +330,7 @@
 
           <!-- Contacto -->
           <a href="/contacto"
-            class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-black/15 transition-colors">
+            class="px-4 py-2 rounded-xl text-base font-subheading uppercase tracking-wider text-white border border-transparent hover:text-brand-yellow-500 hover:bg-white/10 transition-colors">
             Contacto
           </a>
         </nav>
@@ -406,22 +417,22 @@
           </button>
           <div id="drawer-sub-servicios" class="hidden pl-4 pr-1 py-2 flex-col gap-1">
             <a href="/servicios/envios-express" onclick="toggleMobileNav(false)"
-              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-black/15">
+              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-white/10">
               <i data-lucide="zap" class="w-4 h-4 text-brand-yellow-500"></i>
               <span>Envíos Express</span>
             </a>
             <a href="/servicios/envios-lowcost" onclick="toggleMobileNav(false)"
-              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-black/15">
+              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-white/10">
               <i data-lucide="trending-down" class="w-4 h-4 text-brand-yellow-500"></i>
               <span>Envíos LowCost</span>
             </a>
             <a href="/servicios/enviosflex" onclick="toggleMobileNav(false)"
-              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-black/15">
+              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-white/10">
               <i data-lucide="clock" class="w-4 h-4 text-brand-yellow-500"></i>
               <span>Envíos Flex (MeLi)</span>
             </a>
             <a href="/servicios/empresas-cuenta-corriente" onclick="toggleMobileNav(false)"
-              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-black/15">
+              class="flex items-center gap-3 py-2 px-3 rounded-xl text-base font-subheading uppercase tracking-wider text-white hover:text-brand-yellow-500 hover:bg-white/10">
               <i data-lucide="building-2" class="w-4 h-4 text-brand-yellow-500"></i>
               <span>Cuenta Corriente</span>
             </a>
@@ -750,8 +761,8 @@
           <a href="/"
             class="flex items-center gap-3.5 group w-fit focus:outline-none focus-visible:ring-2 focus-visible:ring-brand-yellow-500 rounded-xl">
             <div
-              class="w-11 h-11 bg-white/10 p-1.5 rounded-xl border border-white/15 group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center text-brand-yellow-500">
-              <i data-lucide="bike" class="w-7 h-7"></i>
+              class="w-11 h-11 bg-white/10 p-1 rounded-xl border border-white/15 group-hover:scale-105 transition-transform shrink-0 flex items-center justify-center overflow-hidden">
+              <img src="../public/LogoEnviosDosRuedas.webp" alt="Envíos DosRuedas" class="w-full h-full object-contain" width="44" height="44" />
             </div>
             <div class="flex flex-col leading-none">
               <span class="font-display text-2xl sm:text-3xl tracking-tight uppercase select-none text-white">
