@@ -116,3 +116,19 @@ Nunca se usan sombras negras o grises transparentes. Toda elevación proyecta co
 | Aplicar `double-bezel` en tarjetas destacadas y cotizadores. | Usar tarjetas planas sin jerarquía de borde. |
 | Usar `Anton` y `Bebas Neue` exclusivamente en mayúsculas (`uppercase`). | Usar tipografías display en minúsculas o textos largos de párrafo. |
 | Utilizar `Outfit` para garantizar lectura cómoda en móviles. | Sustituir tipografías del sistema por fuentes genéricas como Arial o Times. |
+
+---
+
+## 7. Gobernanza del Logotipo (Circular Patrimonial vs. Adaptable)
+
+Con el fin de preservar el reconocimiento histórico de más de 7 años de la empresa en Mar del Plata, se establece la siguiente directiva:
+
+### 7.1. Logotipo Circular Patrimonial (Sello de Garantía)
+* **Intocabilidad Cromática:** Se mantienen intactos los colores preexistentes del logotipo circular original tal como lo requiere la dirección. No se fuerzan a la paleta del sitio.
+* **Optimización Vectorial:** Se optimizan trazos y curvas en formato SVG/WebP para evitar pixelado o artefactos en pantallas Retina.
+* **Cápsula de Montaje:** Sobre fondos oscuros o de color de la web (`#0950F6`), se aplica un halo de aislamiento perimetral blanco (`2px a 4px`) o una pastilla de montaje neutra para garantizar autonomía visual.
+
+### 7.2. Logotipos Horizontales y Favicon (Adaptados a la Marca)
+* **Versión Horizontal (Navbar y Cabeceras):** Integra el isotipo vectorial depurado con la marca denominativa `"Envíos DosRuedas"` adoptando 100% los colores de marca (`#0950F6` sobre blanco, o `#FFFFFF` y `#FFEC01` sobre azul).
+* **Favicon e Iconos de Sistema:** Adaptados a los contrastes del sistema de diseño (Azul `#0950F6` de base con acentos Amarillo `#FFEC01` y blanco) para una visibilidad perfecta en navegadores móviles y de escritorio.
+
